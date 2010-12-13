@@ -1,0 +1,5 @@
+jssimide is an opensource JiST/SWANS and ns2 based network simulator and IDE from making it easy to write new protocols at different layers of tcp/ip stack
+and also experimet with protocol behaviuors and collect some usefull simulator statistics by constructing wired,wireless and combination of wired and wirelss
+networks very easily.
+
+It also has an jsanim which enables users to easily animate the senarios.  
