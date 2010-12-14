@@ -1,0 +1,30 @@
+<project name="jssimide" default="" basedir=".">
+
+	<description>
+		jssimide is JiST/SWANS based Network simulator and ide compleatly writen in java.
+	</description>
+
+	<property name="src.dir" location="src" />
+	<property name="lib.dir" location="libs" />
+	<property name="build.dir" location="build" />
+
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="build" depends= "makedir">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath"/>
+		<echo message="Compilation Done"/>
+	</target>
+
+	<target name="clean">
+		<delete dir = "${build.dir}"/>
+	</target>
+
+	<target name="makedir">
+		<mkdir dir= "${build.dir}" />
+	</target>
+
+</project>
